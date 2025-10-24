@@ -29,7 +29,7 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: jakobandersen/githubTest:develop
+        tags: jakobandersen/githubtest:develop
   release-docker:
     if: github.repository_owner == 'jakobandersen' && startsWith(github.event.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
@@ -48,4 +48,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: jakobandersen/githubTest:${{github.ref_name}}
+        tags: jakobandersen/githubtest:${{github.ref_name}}
