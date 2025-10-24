@@ -2,4 +2,4 @@ FROM ubuntu:22.04
 
 RUN echo "Building docker image"
 
-CMD echo "v0"
+CMD echo "v0+1"
