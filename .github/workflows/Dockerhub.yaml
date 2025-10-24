@@ -48,4 +48,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: jakobandersen/githubtest:${{github.ref_name}}
+        tags: jakobandersen/githubtest:${{github.ref_name}},jakobandersen/githubtest:latest
